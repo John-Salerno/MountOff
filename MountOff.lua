@@ -14,7 +14,8 @@ local function MountOff()
     local mountNames = BuildMountNamesTable()
     AuraUtil.ForEachAura("target", "HELPFUL", nil, function(auraName)
         local mountID = mountNames[auraName]
-        if mountID then
+        if mountID ~= nil then
+            --We are purposely doing this even if you don't have the mount collected, so that you see the error message at the top of the screen
             C_MountJournal.SummonByID(mountID)
         end
     end)

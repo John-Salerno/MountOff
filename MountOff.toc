@@ -2,6 +2,6 @@
 ## Title: MountOff
 ## Notes: Addon that allows you to get on your current targets mount if you have it collected
 ## Author: John Salerno
-## Version: 1.0
+## Version: 1.1
 
 MountOff.lua
